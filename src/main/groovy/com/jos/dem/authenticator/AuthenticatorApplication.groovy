@@ -1,12 +1,12 @@
-package com.example
+package com.jos.dem.authenticator
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
-class DemoApplication {
+class AuthenticatorApplication {
 
 	static void main(String[] args) {
-		SpringApplication.run DemoApplication, args
+		SpringApplication.run AuthenticatorApplication, args
 	}
 }
