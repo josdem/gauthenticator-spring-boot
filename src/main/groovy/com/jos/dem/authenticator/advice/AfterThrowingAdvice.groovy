@@ -10,7 +10,7 @@ import com.jos.dem.authenticator.exception.BusinessException
 @Component
 class AfterThrowingAdvice {
 
-  @AfterThrowing(pointcut = "execution(* com.modulus.uno.authenticator.service..**.*(..))", throwing = "ex")
+  @AfterThrowing(pointcut = "execution(* com.jos.dem.authenticator.service..**.*(..))", throwing = "ex")
   void doRecoveryActions(RuntimeException ex){
     println "Wrapping exception ${ex}"
     throw new BusinessException(ex.getMessage(), ex)
