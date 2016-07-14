@@ -16,4 +16,9 @@ class IndexController {
     "contact"
   }
 
+  @RequestMapping("/two-step")
+  String twoStep() {
+    "two_step"
+  }
+
 }
