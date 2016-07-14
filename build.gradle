@@ -16,7 +16,9 @@ plugins {
 
 bower {
   installBase = 'src/main/resources/static/assets/third-party'
-  'bootstrap'('3.3.6')
+  'bootstrap'('3.3.6') {
+    source '**'
+  }
 }
 
 apply plugin: 'groovy'
@@ -44,3 +46,5 @@ dependencies {
 	testCompile 'org.springframework.boot:spring-boot-starter-test'
   testCompile 'org.spockframework:spock-spring:1.0-groovy-2.4'
 }
+
+bootRun.dependsOn rootProject.tasks['bowerInstall']
