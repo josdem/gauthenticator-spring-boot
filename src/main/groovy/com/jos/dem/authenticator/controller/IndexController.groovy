@@ -11,4 +11,9 @@ class IndexController {
     'index'
   }
 
+  @RequestMapping("/contact")
+  String contact() {
+    "contact"
+  }
+
 }
