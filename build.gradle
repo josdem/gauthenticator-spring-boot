@@ -27,7 +27,10 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('org.codehaus.groovy:groovy')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile 'org.springframework.boot:spring-boot-starter-web'
+  compile 'org.springframework.boot:spring-boot-starter-aop'
+	compile 'org.codehaus.groovy:groovy'
+  compile 'com.warrenstrange:googleauth:0.5.0'
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+  testCompile 'org.spockframework:spock-spring:1.0-groovy-2.4'
 }
