@@ -3,12 +3,12 @@ package com.jos.dem.authenticator.service.impl
 import org.springframework.stereotype.Service
 import org.springframework.beans.factory.annotation.Autowired
 
-import com.modulus.uno.authenticator.service.AuthenticatorService
 import com.warrenstrange.googleauth.GoogleAuthenticatorKey
 import com.warrenstrange.googleauth.GoogleAuthenticator
 
-import com.modulus.uno.authenticator.util.GoogleAuthenticatorFactory
-import com.modulus.uno.authenticator.exception.AuthenticationException
+import com.jos.dem.authenticator.service.AuthenticatorService
+import com.jos.dem.authenticator.util.GoogleAuthenticatorFactory
+import com.jos.dem.authenticator.exception.AuthenticationException
 
 @Service
 class AuthenticatorServiceImpl implements AuthenticatorService {

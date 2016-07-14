@@ -8,11 +8,11 @@ import org.springframework.test.context.ContextConfiguration
 import org.springframework.beans.factory.annotation.Autowired
 import spock.lang.Specification
 
-import com.modulus.uno.authenticator.AuthenticatorApplication
-import com.modulus.uno.authenticator.service.AuthenticatorService
-import com.modulus.uno.authenticator.service.impl.AuthenticatorServiceImpl
-import com.modulus.uno.authenticator.util.GoogleAuthenticatorFactory
-import com.modulus.uno.authenticator.exception.BusinessException
+import com.jos.dem.authenticator.AuthenticatorApplication
+import com.jos.dem.authenticator.service.AuthenticatorService
+import com.jos.dem.authenticator.service.impl.AuthenticatorServiceImpl
+import com.jos.dem.authenticator.util.GoogleAuthenticatorFactory
+import com.jos.dem.authenticator.exception.BusinessException
 
 @ContextConfiguration(loader = SpringApplicationContextLoader.class, classes = AuthenticatorApplication.class)
 @IntegrationTest

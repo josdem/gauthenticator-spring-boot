@@ -4,7 +4,7 @@ import org.aspectj.lang.annotation.Aspect
 import org.aspectj.lang.annotation.AfterThrowing
 import org.springframework.stereotype.Component
 
-import com.modulus.uno.authenticator.exception.BusinessException
+import com.jos.dem.authenticator.exception.BusinessException
 
 @Aspect
 @Component

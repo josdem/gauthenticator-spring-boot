@@ -1,4 +1,4 @@
-package com.modulus.uno.authenticator.exception
+package com.jos.dem.authenticator.exception
 
 import java.lang.RuntimeException
 

@@ -8,8 +8,8 @@ import org.springframework.http.ResponseEntity
 import org.springframework.http.HttpStatus
 import org.springframework.beans.factory.annotation.Autowired
 
-import com.modulus.uno.authenticator.service.AuthenticatorService
-import com.modulus.uno.authenticator.exception.BusinessException
+import com.jos.dem.authenticator.service.AuthenticatorService
+import com.jos.dem.authenticator.exception.BusinessException
 
 @RestController
 class AuthenticatorController {

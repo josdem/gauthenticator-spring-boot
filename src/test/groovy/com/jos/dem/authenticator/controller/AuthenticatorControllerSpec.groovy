@@ -3,9 +3,9 @@ package com.jos.dem.authenticator.service
 import org.springframework.http.HttpStatus
 import spock.lang.Specification
 
-import com.modulus.uno.authenticator.service.AuthenticatorService
-import com.modulus.uno.authenticator.controller.AuthenticatorController
-import com.modulus.uno.authenticator.exception.BusinessException
+import com.jos.dem.authenticator.service.AuthenticatorService
+import com.jos.dem.authenticator.controller.AuthenticatorController
+import com.jos.dem.authenticator.exception.BusinessException
 
 class AuthenticatorControllerSpec extends Specification {
 
