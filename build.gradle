@@ -48,3 +48,11 @@ dependencies {
 }
 
 bootRun.dependsOn rootProject.tasks['bowerInstall']
+
+bootRun {
+  systemProperties = System.properties
+}
+
+test {
+  systemProperties = System.properties
+}
