@@ -6,6 +6,7 @@ import org.springframework.boot.test.SpringApplicationContextLoader
 import org.springframework.boot.test.IntegrationTest
 import org.springframework.test.context.ContextConfiguration
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.test.context.web.WebAppConfiguration
 import spock.lang.Specification
 
 import com.jos.dem.authenticator.AuthenticatorApplication
@@ -16,6 +17,7 @@ import com.jos.dem.authenticator.exception.BusinessException
 
 @ContextConfiguration(loader = SpringApplicationContextLoader.class, classes = AuthenticatorApplication.class)
 @IntegrationTest
+@WebAppConfiguration
 class AuthenticatorServiceSpec extends Specification {
 
   @Autowired
