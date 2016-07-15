@@ -10,10 +10,6 @@ buildscript {
 	}
 }
 
-ext {
-  springfoxVersion = '2.5.0'
-}
-
 plugins {
   id 'com.craigburke.bower-installer' version '2.5.1'
 }
@@ -23,6 +19,10 @@ bower {
   'bootstrap'('3.3.6') {
     source '**'
   }
+}
+
+ext {
+  springfoxVersion = '2.5.0'
 }
 
 apply plugin: 'groovy'
