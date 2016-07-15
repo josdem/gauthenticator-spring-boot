@@ -26,17 +26,17 @@ class AuthenticatorControllerSpec extends Specification {
     then:"We expect a valid token"
       1 * service.isValidToken(key, token)
       result.getStatusCode() == HttpStatus.OK
+      result.getBody() == 'OK'
   }
 
   void "should know is not a valid token"(){
     given:"An key and token"
-      String key = 'XCJEGONC4MOOREGH'
-      Integer token = 123456
+      BusinessException businessException = new BusinessException("Unauthorized")
     when:"We validate token"
-      service.isValidToken(key, token) >> {throw new BusinessException("Unauthorized")}
-      def result = controller.validateToken(key, token)
+      def result = controller.handleException(businessException)
     then:"We expect a valid token"
       result.getStatusCode() == HttpStatus.UNAUTHORIZED
+      result.getBody() == 'Unauthorized'
   }
 
 }
