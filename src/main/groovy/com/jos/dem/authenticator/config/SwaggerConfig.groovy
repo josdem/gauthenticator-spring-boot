@@ -1,4 +1,4 @@
-package com.modulus.uno.authenticator.config
+package com.jos.dem.authenticator.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
